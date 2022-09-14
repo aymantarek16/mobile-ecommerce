@@ -1,0 +1,97 @@
+@import '../../index.scss';
+
+// ===================  Navbar Styles =================== //
+.nav {
+    background: $primary-color;
+    color: #fff;
+    height: 88px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;  
+
+    @media screen and (max-width: 768px) {
+        height: 67px;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+
+    &__logo {
+        img {
+            width: 41px;
+            height: 67px;
+
+            @media screen and (max-width: 768px) {
+                width: 24px;
+                height: 34px;
+            }
+        }
+    }
+
+    .Hamburger_Menu {
+        display: none;
+
+        @media screen and (max-width: 768px) {
+            display: block;
+        }
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &__links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+
+        li {
+            margin: 0 20px;
+            cursor: pointer;
+            @media screen and (max-width: 1024px) {
+                margin: 0 10px;
+            }
+
+            &.support {
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: -6px;
+                    left: -20px;
+                    width: 1.2px;
+                    height: 32px;
+                    background-color: gray;
+                    transition: all 0.3s ease-in-out;
+                    @media screen and (max-width: 1024px) {
+                        left: -10px;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    &__icons {
+        display: flex;
+
+        @media screen and (max-width: 768px) {
+            display: none;
+
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 25px;
+            cursor: pointer;
+
+        }
+    }
+}

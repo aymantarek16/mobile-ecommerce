@@ -1,0 +1,29 @@
+// ============================= Global Reset ============================= //
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: SF Pro Display, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// ============================= Global Variables ============================= //
+$primary-color: #1C1C1C;
+$secondary-color: #F0F0F0;
