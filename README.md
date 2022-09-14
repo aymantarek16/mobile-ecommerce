@@ -1,4 +1,4 @@
-# Ui-Ecoomerce
+# Ui-Ecommerce
 
 This is a design that displays a site to sell accessories for Apple products for mobiles. It was created by React.js.
 Responsive to all screen sizes and devices.
