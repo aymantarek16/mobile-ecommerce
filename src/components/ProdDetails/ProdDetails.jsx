@@ -202,9 +202,7 @@ const ProdDetails = ({ product }) => {
             </div>
           </div>
           {/* Button Of Section */}
-          {inStock && (
-            <button className="addToCart">Add to cart</button>
-          ) }
+          {inStock && <button className="addToCart">Add to cart</button>}
           {/* icons Section */}
           <div className="icons">
             <p>
