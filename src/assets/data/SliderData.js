@@ -1,20 +1,21 @@
+import SliderImage from "../images/slider.png";
 const SliderData = [
   {
     id: "1",
-    img: "http://preview.bit68.com/bit68Task/slider.png",
+    img: SliderImage,
   },
   {
     id: "2",
-    img: "http://preview.bit68.com/bit68Task/slider.png",
+    img: SliderImage,
   },
   {
     id: "3",
-    img: "http://preview.bit68.com/bit68Task/slider.png",
+    img: SliderImage,
   },
   {
     id: "4",
-    img: "http://preview.bit68.com/bit68Task/slider.png",
+    img: SliderImage,
   },
 ];
 
-export default SliderData ;
+export default SliderData;
