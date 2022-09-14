@@ -28,6 +28,7 @@ const ProdDetails = ({ product }) => {
       setCount(count - 1);
     }
   };
+  
 
   return (
     <div className="prodDetails">
