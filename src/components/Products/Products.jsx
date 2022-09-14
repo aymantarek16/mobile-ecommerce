@@ -7,7 +7,6 @@ import sliderRight from "../../assets/images/sliderRight.svg";
 import { Link } from "react-router-dom";
 
 const Products = ({ h1 }) => {
- 
   return (
     <div className="products">
       {h1 && (
@@ -18,7 +17,14 @@ const Products = ({ h1 }) => {
 
       <div className="products__items">
         {ProductsData.map((item) => (
-          <Link to={`/home/${item.id}`} className="products__item" key={item.id}>
+          <Link
+            to={`/home/${item.id}`}
+            className="products__item"
+            key={item.id}
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+          >
             <div className="products__item__image">
               <img src={item.img} alt="product" />
             </div>
